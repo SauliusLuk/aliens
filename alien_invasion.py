@@ -85,15 +85,15 @@ class AlienInvasion:
                 self.bullets.remove(bullet)
 
     def _create_fleet(self):
-        """Create the fleet of aliens."""
-        # Create an alien and find the number of aliens in a row.
+        """Create the fleet of aliens_old."""
+        # Create an alien and find the number of aliens_old in a row.
         # Spacing between each alien is equal to one alien width.
         alien = Alien(self)
         alien_width = alien.rect.width
         available_space_x = self.settings.screen_width - (2 * alien_width)
         number_aliens_x = available_space_x // (2 * alien_width)
 
-        # Create first row of aliens.
+        # Create first row of aliens_old.
         for alien_number in range(number_aliens_x):
             # Create an alien and place it in the row.
             alien = Alien(self)
